@@ -1,21 +1,37 @@
 import React from "react";
-import { render } from 'react-dom';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // {import something specific}
 
 // import CSS Styles 
-
+import "./App.css"
 
 // Importing page files 
+import HomePage from './pages/HomePage.js';
+import ContactPage from './pages/ContactPage.js';
 
 
 // Importing page components  <Route path = "/PageTemplate" component = {PageTemplate} />
-
+import NavHeader from "./components/NavHeader.js";
 
 function App() {
   
   // The return can only export 1 element. You can bundle multiple elements using a cluster
   return (
-    null
+    <Router>
+      <div className = "App">
+
+        <NavHeader />        
+
+        <Routes>
+          <Route path = "/" exact element = { < HomePage /> } />  
+          <Route path = "/ContactPage" element = { < ContactPage /> } />  
+          
+
+        </Routes>
+
+      </div>
+
+    </Router>        
   );
 }
 

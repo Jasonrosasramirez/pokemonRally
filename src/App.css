@@ -1,0 +1,26 @@
+.App{
+    text-align: center;
+}
+
+/* NavHeader Specific */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background: rgb(230, 41, 8);
+    color: white;
+}
+
+.navLinks {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none; /* removes the bullet points */
+}
+
+li {
+    color:white;
+}
