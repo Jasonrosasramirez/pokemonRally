@@ -1,18 +1,29 @@
 import React from 'react';
+import {functionTestDummy, anotherDummy} from '../PokedexPageFunction.js';
+
+
+
 
 //Test Variables
-var Vara = 5; 
-var Varb = 3;
+var subMe = "I am the subMe test Variable       ";
 
-var subMe = Vara-Varb;
+
 
 function PokedexPage () {
     return (
         <div>
-            <h1> I am the PokedexPage </h1>
-            
-            {subMe} {/*Test to see if it displays on screen*/}
+            <div>
+                <h1> I am the PokedexPage </h1>
+                <p>This is the test section with {subMe}, {anotherDummy}, and the {functionTestDummy}</p> {/*Test to see if it displays on screen*/}
 
+            </div>
+            
+            <div>
+                <p>________________</p>                
+                <p>now let's display the Pokedex</p>
+
+            </div>            
+                    
         </div>
 
     );
