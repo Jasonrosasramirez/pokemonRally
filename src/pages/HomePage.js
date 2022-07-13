@@ -4,7 +4,21 @@ import React from 'react';
 function HomePage () {
     return (
         <div>
-            <h1> This is the home page </h1>
+            
+            <div>
+                <h1> Welcome to the home page :D </h1>
+                
+                <p> Description </p>
+
+            </div>
+
+
+            <div>
+                <h2>You Horoscope of the day</h2>
+
+            </div>
+
+
 
         </div>
 
